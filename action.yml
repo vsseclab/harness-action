@@ -1,0 +1,31 @@
+# See: https://docs.github.com/en/actions/creating-actions
+name: Harness Deploy Action
+author: FreeAgent
+description: Call the Harness.io API to deploy an application
+inputs:
+  webhookUrl:
+    description: Harness manual trigger Webhook URL
+    required: true
+  application:
+    description: Harness application to deploy
+    required: true
+  services:
+    description: List of service names to deploy
+    required: true
+  version:
+    description: Version to deploy
+    required: true
+  harnessApiKey:
+    description: Key to use to communicate with Harness, needed when waitForDeploy is true
+  waitForDeploy:
+    description: Whether to wait for the deployment to complete before completing. Defaults to `false` (don't wait)
+    default: false
+outputs:
+  harness_url:
+    description: URL to find and watch the deploy
+  error:
+    description: JSON error message from the API in case of failure.
+
+runs:
+  using: 'node12'
+  main: dist/index.js
