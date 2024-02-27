@@ -1,0 +1,14 @@
+inputSet:
+  name: VssprNum
+  identifier: prnset
+  orgIdentifier: default
+  projectIdentifier: vsshac
+  pipeline:
+    identifier: Vssbuildh
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
