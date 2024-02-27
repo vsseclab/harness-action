@@ -1,8 +1,8 @@
 pipeline:
-  identifier: Build_vsseclab_harness_action_1709045231910
+  identifier: Vssbuidh
   name: Build harness-action
   orgIdentifier: default
-  projectIdentifier: default_project
+  projectIdentifier: vsshac
   properties:
     ci:
       codebase:
