@@ -1,10 +1,10 @@
 inputSet:
-  name: Build_vsseclab_harness_action_1709045231910-push-trigger-input-set
-  identifier: Build_vsseclab_harness_action_1709045231910pushtriggerinputset
+  name: VssBranch
+  identifier: pushset
   orgIdentifier: default
-  projectIdentifier: default_project
+  projectIdentifier: vsshac
   pipeline:
-    identifier: Build_vsseclab_harness_action_1709045231910
+    identifier: Vssbuildh
     properties:
       ci:
         codebase:
