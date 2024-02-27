@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_vsseclab_harness_action_1709062811619-push-trigger-input-set
+  identifier: Build_vsseclab_harness_action_1709062811619pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_vsseclab_harness_action_1709062811619
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
