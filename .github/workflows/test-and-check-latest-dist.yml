@@ -37,7 +37,7 @@ jobs:
 
     - if: ${{ steps.check-for-changes.outputs.CHANGES_TO_COMMIT == 'true' }}
       name: Commit and push latest dist changes
-      uses: stefanzweifel/git-auto-commit-action@v4
+      uses: stefanzweifel/git-auto-commit-action@v5.0.0
       with:
         commit_message: Auto-update dist/index.js
         file_pattern: dist/*
