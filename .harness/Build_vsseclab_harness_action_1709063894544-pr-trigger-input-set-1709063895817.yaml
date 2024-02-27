@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_vsseclab_harness_action_1709063894544-pr-trigger-input-set
+  identifier: Build_vsseclab_harness_action_1709063894544prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: vssk8s
+  pipeline:
+    identifier: Build_vsseclab_harness_action_1709063894544
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
