@@ -6,9 +6,10 @@ pipeline:
   properties:
     ci:
       codebase:
-        build: <+input>
         connectorRef: account.Github_OAuth_1709041503785
         repoName: vsseclab/harness-action
+        build: <+input>
+        prCloneStrategy: MergeCommit
   stages:
     - stage:
         identifier: build
